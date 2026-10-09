@@ -1,0 +1,21 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+
+# ChromaDB database
+chroma_db/
+
+# IDE and OS files
+.vscode/
+.DS_Store
+!.env.example
