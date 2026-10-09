@@ -85,3 +85,19 @@ python -m pytest tests -v
 
 Keep API keys in `.env`. Never commit secrets or customer-sensitive
 information to a public repository.
+
+## Test Results
+
+Tests executed using `pytest`.
+
+| Test case | Expected behavior | Result |
+|---|---|---|
+| Existing order lookup | Returns order details for KE1002 | PASS |
+| Case-insensitive order ID | Finds KE1002 when entered as ke1002 | PASS |
+| Nonexistent order | Returns a not-found message | PASS |
+| Electronics return policy | Retrieves the 10-day return window | PASS |
+| Policy search response | Returns a non-empty response | PASS |
+
+**Total: 5 passed, 0 failed.**
+
+Command: `python -m pytest tests -v`
